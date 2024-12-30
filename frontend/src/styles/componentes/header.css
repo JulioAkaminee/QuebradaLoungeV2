@@ -37,13 +37,12 @@ header{
 .containerLogin{
     display: flex;
     align-items: center;
-    gap: 25px;
     position: relative;
 }
 .searchImage{
     position: absolute;
-    right:  170px;
-    bottom: 5px;
+    right:  160px;
+    top: 15px;
     opacity: 0.5;
     z-index: 99999;
 }
@@ -56,10 +55,12 @@ header{
     border: none;
     border-radius: 5px;
     font-weight: 600;
+    margin: 10px;
 }
 
 .carrinhoImage{
     cursor: pointer;
+    margin: 10px;
 }
 
 #inputPesquisa{
@@ -70,3 +71,85 @@ header{
     border: none;
     outline: none;
 }
+.menuBurguer{
+    display: none;
+    cursor: pointer;
+}
+
+.navMobile{
+    display: none;
+   
+}
+
+.navMobile ul li{
+    list-style-type: none;
+    
+}
+
+.navMobile.menuAberto{
+    display: flex;
+    height: 100vh;
+    width: 50%;
+    background-color: #F2E63D;
+    position: absolute;
+    right: 0;
+    animation: slideInLeftRight 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;   
+    z-index: 999;
+}
+
+.clickFora{
+    background-color: #2d303866; /* Fundo semitransparente */
+    backdrop-filter: blur(1px); /* Aplica o efeito de desfoque */
+  
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+
+  
+   
+
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.clickForaOff{
+    display: none;
+}
+
+@keyframes slideInLeftRight {
+    0% {
+      opacity: 0;
+      transform: translate(300px); /* Menu começa a 300px à direita */
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0); /* Menu chega na posição normal */
+    }
+  }
+
+@media screen and (max-width:1150px){
+    .navList{
+        gap: 34px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    #inputPesquisa{
+        display: none;
+    }
+    .searchImage{
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .navList{
+        display: none;
+    }
+    .menuBurguer{
+        display: block;
+    }
+    .containerLogin{
+        display: none;
+        
+    }
+}
+
