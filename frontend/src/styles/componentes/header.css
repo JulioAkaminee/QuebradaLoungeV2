@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue';
+}
+.containerHeader{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+header{
+    background-color: #F2E63D;
+    width: 90%;
+    height: 80px;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.logoQuebrada{
+    cursor: pointer;
+}
+.navList{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
+.navItem{
+    cursor: pointer;
+    font-weight: 500;
+}
+.containerLogin{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    position: relative;
+}
+.searchImage{
+    position: absolute;
+    right:  170px;
+    bottom: 5px;
+    opacity: 0.5;
+    z-index: 99999;
+}
+.containerLogin button{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.carrinhoImage{
+    cursor: pointer;
+}
+
+#inputPesquisa{
+    height: 30px;
+    padding: 15px;
+    padding-right: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
