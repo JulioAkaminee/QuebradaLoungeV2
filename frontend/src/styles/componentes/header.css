@@ -44,7 +44,7 @@ header{
     right:  160px;
     top: 15px;
     opacity: 0.5;
-    z-index: 99999;
+    z-index: 999;
 }
 .containerLogin button{
     color: white;
@@ -86,6 +86,51 @@ header{
     
 }
 
+.navListMobile{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+
+}
+
+.navItemMobile.active{
+    background: #ffffff66;
+    border-left: solid black 5px;
+    
+}
+
+.navItemMobile.active:hover{
+    padding-left: 40px;
+}
+.containerNavigation{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    font-weight: 600;
+    width: 100%;
+    transition: 300ms;
+   
+ 
+}
+.containerNavigation a {
+    width: 100%;
+    height: 60px;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+    transition: background-color 300ms ease, border-left 300ms ease, padding-left 300ms ease;
+    background-color: transparent;
+    border-left: solid transparent 5px; 
+}
+
+.containerNavigation a:hover {
+    background-color: #ffffff66; 
+    border-left: solid black 5px; 
+    padding-left: 50px; 
+   
+}
 .navMobile.menuAberto{
     display: flex;
     height: 100vh;
@@ -94,13 +139,13 @@ header{
     position: absolute;
     right: 0;
     animation: slideInLeftRight 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;   
-    z-index: 999;
+    z-index: 9999;
+    transition: 300ms;
 }
 
 .clickFora{
-    background-color: #2d303866; /* Fundo semitransparente */
-    backdrop-filter: blur(1px); /* Aplica o efeito de desfoque */
-  
+    background-color: #2d303866;
+    backdrop-filter: blur(1px); 
     width: 100%;
     height: 100vh;
     position: absolute;
@@ -114,6 +159,36 @@ header{
     display: none;
 }
 
+.textMenu{
+    text-align: center;
+    margin: 30px 0;
+    
+
+}
+
+.btnEntrarMobile{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 50px;
+    width: 90%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 20px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+
+.menuClose{
+    position: absolute;
+    left: 40px;
+    top: 55px;
+    cursor: pointer;
+}
 @keyframes slideInLeftRight {
     0% {
       opacity: 0;

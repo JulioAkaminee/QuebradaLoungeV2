@@ -11,7 +11,7 @@ class MyDocument extends Document {
           
           {/* Pré-conectar para melhorar performance (corrigido o "crossorigin") */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 
           {/* Adicionar fontes adicionais corretamente */}
           <link 
