@@ -7,14 +7,22 @@ import { useRouter } from 'next/router';
 export default function Header() {
     const [menuAberto, SetMenuAberto] = useState(false);
     const [clickFora, SetClickFora] = useState(false);
-
+    
 
     const router = useRouter();
 
     const abrirMenu = () => {
-        SetMenuAberto(!menuAberto)
-        SetClickFora(!clickFora)
-    }
+        SetMenuAberto(!menuAberto);
+        SetClickFora(!clickFora);
+    
+        if (!menuAberto) {
+            document.body.style.overflow = 'hidden'; // Desativa o scroll
+        } else {
+            document.body.style.overflow = 'auto'; // Restaura o scroll
+        }
+    };
+
+
 
 
 

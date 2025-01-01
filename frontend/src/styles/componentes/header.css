@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Epilogue';
 }
+
 .containerHeader{
     display: flex;
     justify-content: center;
@@ -78,6 +79,7 @@ header{
 
 .navMobile{
     display: none;
+    
    
 }
 
@@ -133,14 +135,14 @@ header{
 }
 .navMobile.menuAberto{
     display: flex;
-    height: 100vh;
+    height: 100%;
     width: 50%;
     background-color: #F2E63D;
-    position: absolute;
+    position: fixed;
     right: 0;
-    animation: slideInLeftRight 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;   
+    animation: slideInLeftRight 1.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;   
     z-index: 9999;
-    transition: 300ms;
+    
 }
 
 .clickFora{
@@ -149,15 +151,13 @@ header{
     width: 100%;
     height: 100vh;
     position: absolute;
-
   
-   
+  
+    
+    transition: transform 1s ease;
+}
 
-    transition: opacity 0.8s ease, transform 0.8s ease;
-}
-.clickForaOff{
-    display: none;
-}
+
 
 .textMenu{
     text-align: center;
@@ -191,7 +191,7 @@ header{
 }
 @keyframes slideInLeftRight {
     0% {
-      opacity: 0;
+      opacity:  1;
       transform: translate(300px); /* Menu começa a 300px à direita */
     }
     100% {
@@ -199,6 +199,20 @@ header{
       transform: translate(0); /* Menu chega na posição normal */
     }
   }
+
+  @keyframes slideOutLeftRight {
+  
+    0% {
+      opacity: 1;
+      transform: translate(0); /* Menu chega na posição normal */
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(300px); /* Menu começa a 300px à direita */
+      }
+  }
+
 
 @media screen and (max-width:1150px){
     .navList{
@@ -228,3 +242,9 @@ header{
     }
 }
 
+
+@media screen and (max-width:400px) {
+  .menuClose{
+    left: 25px;
+  }
+}
