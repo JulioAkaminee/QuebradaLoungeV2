@@ -5,6 +5,14 @@
     font-family: 'Epilogue';
 }
 
+@font-face {
+    font-family: 'Epilogue';
+    src: url('/assets/fonts/Epilogue-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900; /* Se for uma fonte variável, você pode definir o intervalo de pesos */
+    font-style: normal; /* Ou "italic", dependendo do estilo da fonte */
+}
+
+
 .containerHeader{
     display: flex;
     justify-content: center;
@@ -14,7 +22,7 @@ header{
     background-color: #F2E63D;
     width: 90%;
     height: 80px;
-    margin-top: 20px;
+    margin-top: -90px;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -23,6 +31,12 @@ header{
 }
 .logoQuebrada{
     cursor: pointer;
+    margin-top: -30px;
+    opacity: 0;
+    transition: 600ms ease;
+}
+.logoQuebrada:hover{
+    scale: 1.050;
 }
 .navList{
     list-style-type: none;
@@ -30,26 +44,51 @@ header{
     flex-direction: row;
     gap: 70px;
 }
+.navItem:hover{
+    scale: 1.050;
+
+}
 
 .navItem{
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 600;
+    margin-top: -40px;
+    transition: 900ms ;
+    opacity: 0;
+    font-size: 18px;
+    white-space: nowrap;
 }
 .containerLogin{
     display: flex;
     align-items: center;
     position: relative;
 }
+.containerInputPesquisa{
+    margin-top: -40px;
+    transition: 500ms;
+    opacity: 0;
+    position: relative;
+    transition: 500ms ease;
+}
 .searchImage{
     position: absolute;
-    right:  160px;
-    top: 15px;
+    right: 6px;
+    top: 4px;
     opacity: 0.5;
     z-index: 999;
+    cursor: pointer;
+    transition: 500ms ease;
+    
+   
+   
+    
 }
-.containerLogin button{
-    color: white;
-    background-color: black;
+.searchImage:hover{
+    opacity: 1;
+}
+.btnEntrarDesktop{
+    color: #fff;
+    background-color: #000;
     cursor: pointer;
     padding: 10px 20px;
     outline: none;
@@ -57,20 +96,41 @@ header{
     border-radius: 5px;
     font-weight: 600;
     margin: 10px;
+    font-size: 18px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    transition: 500ms ease;
+    
 }
 
+.linkbtnEntrarDesktop{
+    margin-top: -40px;
+    opacity: 0;
+    transition: 500ms ease;
+}
+.btnEntrarDesktop:hover{
+    scale: 1.050;
+}
 .carrinhoImage{
     cursor: pointer;
     margin: 10px;
+    margin-top: -40px;
+    opacity: 0;
+    transition: 500ms ease;
+}
+.carrinhoImage:hover{
+    scale: 1.050;
 }
 
 #inputPesquisa{
-    height: 30px;
+    height: 33px;
     padding: 15px;
     padding-right: 30px;
     border-radius: 5px;
     border: none;
     outline: none;
+    transition: 700ms;
 }
 .menuBurguer{
     display: none;
@@ -94,6 +154,7 @@ header{
     flex-direction: column;
     width: 100%;
     margin-top: 30px;
+ 
 
 }
 
@@ -112,19 +173,29 @@ header{
     margin-top: 50px;
     font-weight: 600;
     width: 100%;
-    transition: 300ms;
+
    
  
 }
 .containerNavigation a {
     width: 100%;
     height: 60px;
-    padding-left: 40px;
+    padding-left: 700px;
     display: flex;
     align-items: center;
-    transition: background-color 300ms ease, border-left 300ms ease, padding-left 300ms ease;
+    transition: background-color 300ms ease, border-left 300ms ease, padding-left 800ms cubic-bezier(.165,.84,.44,1);
+    white-space: nowrap;
+
+
+    
+
+
     background-color: transparent;
     border-left: solid transparent 5px; 
+    font-size: 18px;
+    font-weight: 700;
+
+   
 }
 
 .containerNavigation a:hover {
@@ -136,11 +207,12 @@ header{
 .navMobile.menuAberto{
     display: flex;
     height: 100%;
-    width: 50%;
+    width: 70%;
     background-color: #F2E63D;
     position: fixed;
     right: 0;
-    animation: slideInLeftRight 1.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;   
+
+    animation: slideInLeftRight 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;   
     z-index: 9999;
     
 }
@@ -151,8 +223,8 @@ header{
     width: 100%;
     height: 100vh;
     position: absolute;
-  
-  
+   opacity: 0;
+
     
     transition: transform 1s ease;
 }
@@ -174,13 +246,19 @@ header{
     border-radius: 5px;
     border: none;
     outline: none;
-    padding: 20px;
+    padding: 10px 15px;
     cursor: pointer;
     background-color: black;
     color: white;
     font-weight: 600;
     font-size: 20px;
+    margin-left: 400px;
+    transition: 700ms ease;
+    opacity: 0;
 
+}
+.linkBtnEntrarMobile{
+    width: 90%;
 }
 
 .menuClose{
@@ -204,31 +282,43 @@ header{
   
     0% {
       opacity: 1;
-      transform: translate(0); /* Menu chega na posição normal */
+      transform: translate(0);
     }
 
     100% {
         opacity: 0;
-        transform: translate(300px); /* Menu começa a 300px à direita */
+        transform: translate(-300px); 
       }
   }
 
 
-@media screen and (max-width:1150px){
+@media screen and (max-width:1200px){
     .navList{
         gap: 34px;
     }
 }
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1070px){
     #inputPesquisa{
         display: none;
     }
     .searchImage{
         display: none;
     }
+    .navList{
+     gap: 25px;
+    }
 }
 
+@media screen and (max-width:900px){
+   .navItem{
+    font-size: 16px;
+    
+   }
+   .navList{
+    gap: 20px;
+   }
+}
 @media screen and (max-width:768px) {
     .navList{
         display: none;
@@ -240,6 +330,8 @@ header{
         display: none;
         
     }
+
+    
 }
 
 
@@ -247,4 +339,5 @@ header{
   .menuClose{
     left: 25px;
   }
+ 
 }
