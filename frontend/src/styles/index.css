@@ -15,7 +15,8 @@ html {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('/assets/images/bannerJackDaniels.png');
+    background: 
+    url('/assets/images/bannerJackDaniels.png');
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -23,12 +24,23 @@ html {
     z-index: -1;
 }
 
+.sectionBanner::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 160px; /* Ajuste a altura do fade conforme necessário */
+    background: linear-gradient(to top,#17171a,  #17171a00); /* Gradiente de opaco para transparente */
+    z-index: 1; /* Garante que o fade fique sobre a imagem de fundo */
+}
+
 .titleBannerJackDaniels {
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
+    z-index: 2;
     color: white;
     text-align: center;
     font-size: 60px;
@@ -51,6 +63,7 @@ html {
     border: none;
     outline: none;
     cursor: pointer;
+    z-index: 2;
 }
 
 @media (max-width: 1024px) {
@@ -117,8 +130,8 @@ html {
     }
 
     .titleBannerJackDaniels {
-        font-size: 26px;
-        width: 350px;
+        font-size: 30px;
+        width: 390px;
     }
 
     .btnVerPromoções {

@@ -11,7 +11,11 @@ export default function Home() {
      </Head>
       <Header />
     {/* Seção do banner */}
-    <section className='sectionBanner'>
+    <motion.section className='sectionBanner'
+    initial={{opacity:0}}
+    animate={{opacity:1}}
+    transition={{duration:2.5, ease: [0.25, 0.8, 0.25, 1]}}
+    >
     <motion.h1
   className="titleBannerJackDaniels"
   initial={{ opacity: 0, y: 20, transform: 'translate(-50%, -40%)' }} 
@@ -37,7 +41,7 @@ export default function Home() {
 >
   Ver Promoções
 </motion.button>
-</section>
+</motion.section>
      
     </div>
   );
