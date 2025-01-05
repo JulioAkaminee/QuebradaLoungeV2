@@ -14,7 +14,7 @@ class MyDocument extends Document {
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 
         </Head>
-        <body>
+        <body style={{background:"#17171A"}}>
           <Main />
           <NextScript />
         </body>

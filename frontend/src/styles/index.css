@@ -1,10 +1,55 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
-.bannerJackDaniels{
-    width: 100%;
-    object-fit: cover;
-    object-position: bottom;
+.sectionBanner {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+.sectionBanner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/assets/images/bannerJackDaniels.png');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
     filter: brightness(0.5);
+    z-index: -1;
+}
+
+.titleBannerJackDaniels {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    width: 700px;
+}
+
+
+.titleBannerStart{
+    color: #F2E63D;
+}
+
+.btnVerPromoções{
+    position: relative;
+    padding: 10px 20px;
+    font-weight: 800;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }

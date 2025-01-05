@@ -4,12 +4,19 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <>
+    <div className='mainPage'>
      <Head>
      <title>Quebrada Lounge - Página Inicial</title>
      </Head>
       <Header />
-      <Image className='bannerJackDaniels' src={"/assets/images/bannerJackDaniels.png"} width={1728} height={500}/>
-    </>
+    {/* Seção do banner */}
+    <section className='sectionBanner'>
+  <h1 className='titleBannerJackDaniels'>
+    <span className='titleBannerStart'>Na quebrada e para a quebrada: </span>bebidas pra todos os momentos.
+  </h1>
+  <button className='btnVerPromoções'>Ver Promoções</button>
+</section>
+     
+    </div>
   );
 }
