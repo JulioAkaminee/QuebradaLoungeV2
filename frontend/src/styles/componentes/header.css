@@ -14,9 +14,11 @@
 
 
 .containerHeader{
+    position: absolute;
     display: flex;
     justify-content: center;
     width: 100%;
+    z-index: 999999;
 }
 header{
     background-color: #F2E63D;
@@ -213,7 +215,7 @@ header{
     right: 0;
 
     animation: slideInLeftRight 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;   
-    z-index: 9999;
+    z-index: 99999999;
     
 }
 
@@ -224,6 +226,7 @@ header{
     height: 100vh;
     position: absolute;
    opacity: 0;
+   z-index: 99999998;
 
     
     transition: transform 1s ease;
