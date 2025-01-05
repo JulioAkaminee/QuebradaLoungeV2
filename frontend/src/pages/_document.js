@@ -22,15 +22,16 @@ class MyDocument extends Document {
             async 
             src="https://www.googletagmanager.com/gtag/js?id=G-1Q2WVZEC8B" 
           />
-          <script>
-            {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-
-              gtag('config', 'G-1Q2WVZEC8B');
-            `}
-          </script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-1Q2WVZEC8B');
+              `,
+            }}
+          />
         </Head>
         <body style={{background:"#17171A"}}>
           <Main />
