@@ -35,12 +35,11 @@ html {
     width: 700px;
 }
 
-
-.titleBannerStart{
+.titleBannerStart {
     color: #F2E63D;
 }
 
-.btnVerPromoções{
+.btnVerPromoções {
     position: relative;
     padding: 10px 20px;
     font-weight: 800;
@@ -52,4 +51,78 @@ html {
     border: none;
     outline: none;
     cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .titleBannerJackDaniels {
+        width: 700px;
+    }
+
+    .btnVerPromoções {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sectionBanner {
+        height: 400px;
+    }
+
+    .titleBannerJackDaniels {
+        font-size: 40px;
+        width: 490px;
+    }
+
+    .btnVerPromoções {
+        font-size: 18px;
+        top: 45%;
+    }
+}
+
+@media (max-width: 530px) {
+    .sectionBanner {
+        height: 350px;
+    }
+
+    .titleBannerJackDaniels {
+        font-size: 30px;
+        width: 440px;
+    }
+
+    .btnVerPromoções {
+        font-size: 18px;
+        top: 47%;
+    }
+}
+
+@media (max-width: 470px) {
+    .sectionBanner {
+        height: 350px;
+    }
+
+    .titleBannerJackDaniels {
+        font-size: 26px;
+        width: 370px;
+    }
+
+    .btnVerPromoções {
+        font-size: 18px;
+        top: 45%;
+    }
+}
+
+@media (max-width: 425px) {
+    .sectionBanner {
+        height: 350px;
+    }
+
+    .titleBannerJackDaniels {
+        font-size: 26px;
+        width: 350px;
+    }
+
+    .btnVerPromoções {
+        font-size: 16px;
+        top: 48%;
+    }
 }
