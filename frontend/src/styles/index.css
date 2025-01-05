@@ -30,9 +30,9 @@ html {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 160px; /* Ajuste a altura do fade conforme necessário */
+    height: 160px; 
     background: linear-gradient(to top,#17171a,  #17171a00); /* Gradiente de opaco para transparente */
-    z-index: 1; /* Garante que o fade fique sobre a imagem de fundo */
+    z-index: 1; 
 }
 
 .titleBannerJackDaniels {
