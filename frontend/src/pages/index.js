@@ -2,7 +2,8 @@ import Header from '../components/header/header'
 import Head from 'next/head';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-
+import CardProdutos from '@/components/cardProdutos/cardProduto';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -44,7 +45,36 @@ export default function Home() {
 </motion.button>
 </motion.section>
 
-  <section>
+   
+  <section className='promotionProducts'>
+    <div>
+    <motion.h1  initial={{ opacity: 0, y: 20, }} 
+  animate={{ opacity: 1, y: 0 }}    
+  transition={{
+    duration: 1, 
+    delay: 1.3,  
+    ease: [0.25, 0.8, 0.25, 1], 
+  }} className='titlePromotion'>Promoções da Semana</motion.h1>
+    <motion.div  className='containerBtnShowAllProducts' initial={{ opacity: 0, y: 20, }} 
+  animate={{ opacity: 1, y: 0 }}    
+  transition={{
+    duration: 1, 
+    delay: 1.5,  
+    ease: [0.25, 0.8, 0.25, 1], 
+  }}>
+      <Link href={'/login'} className='btnShowAllProducts'>Ver Todos Produtos</Link>
+      </motion.div>
+      <motion.div initial={{ opacity: 0, y: 20, }} 
+  animate={{ opacity: 1, y: 0 }}    
+  transition={{
+    duration: 1, 
+    delay: 1.8,  
+    ease: [0.25, 0.8, 0.25, 1], 
+  }}>
+        <CardProdutos/>
+        </motion.div>
+      </div>
+ 
     
   </section>
      

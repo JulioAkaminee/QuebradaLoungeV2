@@ -1,14 +1,17 @@
 
 .produtosContainer{
     display: flex;
-    gap: 5px;
+    gap: 25px;
 }
 .cardProdutoContainer{
     background-color: white;
     width:230px;
-    height: 400px;
+    height: 410px;
     border-radius: 10px;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
@@ -30,6 +33,7 @@
 .imageProduct{
     scale: 0.8;
     object-fit: contain;
+    width: fit-content;
 
 }
 
@@ -40,7 +44,7 @@
 }
 
 .nameProduct{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     font-family: "Epilogue";
     margin-bottom: 10px;
@@ -65,7 +69,14 @@
     outline: none;
     background: none;
     cursor: pointer;
+    transition: 300ms ease;
 
+}
+
+.btnAddToCart:hover{
+  
+    background-color: black;
+    color: white;
 }
 .btnBuy{
     width: 100%;
@@ -77,5 +88,9 @@
     cursor: pointer;
     background: #22C55E;
     color: white;
+}
+
+.btnBuy:hover{
+    background: #115f2e;
 }
 

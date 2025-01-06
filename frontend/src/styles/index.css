@@ -44,7 +44,7 @@ html {
     color: white;
     text-align: center;
     font-size: 60px;
-    width: 700px;
+    width: 750px;
 }
 
 .titleBannerStart {
@@ -64,8 +64,50 @@ html {
     outline: none;
     cursor: pointer;
     z-index: 2;
+    transition: 300ms ease;
 }
 
+.btnVerPromoções:hover{
+    background-color: rgb(191, 191, 191);
+}
+
+.promotionProducts{
+ 
+    background: url('../../public/assets/overlay/quadrados.png');
+    background-size:cover;
+    height: 600px;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titlePromotion{
+    text-align: center;
+    color:white;
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+
+.btnShowAllProducts{
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
+    transition: 300ms;
+}
+
+.btnShowAllProducts:hover{
+    background-color: rgba(255, 255, 255, 0.558);
+}
+.containerBtnShowAllProducts{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0;
+    
+}
 @media (max-width: 1024px) {
     .titleBannerJackDaniels {
         width: 700px;

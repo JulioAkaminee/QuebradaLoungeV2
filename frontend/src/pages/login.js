@@ -1,4 +1,4 @@
-import CardProduto from "@/components/cardProduto/cardProduto"
+import CardProduto from "@/components/cardProdutos/cardProduto"
 export default function Login(){
     return(
         <>
