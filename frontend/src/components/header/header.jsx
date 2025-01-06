@@ -222,13 +222,15 @@ export default function Header() {
                             />
                         </div>
                         <Link href={"/login"} className='linkbtnEntrarDesktop'><button className='btnEntrarDesktop' >Entrar</button></Link>
-                        <Image
-                            className='carrinhoImage'
-                            src={'/assets/icons/shopping_cart.png'}
-                            width={32}
-                            height={32}
-                            alt='icone de carrinho de compras'
-                        />
+                        <Link href={"/shoppingCart"}>
+                            <Image
+                                className='carrinhoImage'
+                                src={'/assets/icons/shopping_cart.png'}
+                                width={32}
+                                height={32}
+                                alt='icone de carrinho de compras'
+                            />
+                        </Link>
                     </div>
 
                     <Image

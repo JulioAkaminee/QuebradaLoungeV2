@@ -1,0 +1,31 @@
+iframe{
+    width: 90%;
+    height: 400px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-top: 50px;
+    
+}
+
+.map{
+    position: absolute;
+}
+
+.containerMapDetails{
+    color: white;
+    position: relative;
+    background-color: #F2E63D;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.containerMapDetails h1{
+    margin: 10px 0;
+}

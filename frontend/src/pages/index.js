@@ -3,7 +3,9 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import CardProdutos from '@/components/cardProdutos/cardProduto';
+import Location from '@/components/localização/location';
 import Link from 'next/link';
+
 
 export default function Home() {
   return (
@@ -62,9 +64,9 @@ export default function Home() {
     delay: 1.5,  
     ease: [0.25, 0.8, 0.25, 1], 
   }}>
-      <Link href={'/login'} className='btnShowAllProducts'>Ver Todos Produtos</Link>
+      <Link href={'/products'} className='btnShowAllProducts'>Ver Todos Produtos</Link>
       </motion.div>
-      <motion.div initial={{ opacity: 0, y: 20, }} 
+      <motion.div className='products' initial={{ opacity: 0, y: 20, }} 
   animate={{ opacity: 1, y: 0 }}    
   transition={{
     duration: 1, 
@@ -77,6 +79,7 @@ export default function Home() {
  
     
   </section>
+  <div className='containerMapa'><Location/></div>
      
     </div>
   );

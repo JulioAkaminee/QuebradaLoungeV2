@@ -108,9 +108,14 @@ html {
     margin: 10px 0;
     
 }
+
+.containerMapa{
+   display: flex;
+   justify-content: center;
+}
 @media (max-width: 1024px) {
     .titleBannerJackDaniels {
-        width: 700px;
+        width: 720px;
     }
 
     .btnVerPromoções {
@@ -148,6 +153,7 @@ html {
         font-size: 18px;
         top: 47%;
     }
+
 }
 
 @media (max-width: 470px) {

@@ -1,8 +1,8 @@
-import CardProduto from "@/components/cardProdutos/cardProduto"
+import Location from "@/components/localização/location"
 export default function Login(){
     return(
         <>
-        <CardProduto/>
+        <Location/> 
         </>
     )
 }
