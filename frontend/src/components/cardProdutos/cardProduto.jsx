@@ -44,7 +44,7 @@ com o valor de ${produto.value}`)
             {produtos.map((produto, index) => (
                 <div className="cardProdutoContainer" onClick={() => produtoClicado(produto)}  key={index}>
                     <div className="containerImageProduct">
-                        <Image className="imageProduct" src={produto.image} width={84} height={154} />
+                        <Image className="imageProduct" src={produto.image} width={84} height={154} alt={produto.name} />
                     </div>
                     <h1 className="valueProduct">
                         <span className="cifraoProduct">R$ </span>{produto.value.toFixed(2)}
