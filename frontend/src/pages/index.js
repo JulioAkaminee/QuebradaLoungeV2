@@ -27,7 +27,7 @@ export default function Home() {
     ease: [0.25, 0.8, 0.25, 1], 
   }}
 >
-  <span className='titleBannerStart'>Na quebrada e para a quebrada: </span>bebidas pra todos os momentos.
+  <span className='titleBannerStart'>Do quebrada direto pra quebrada: </span>bebidas pra todos os momentos.
 </motion.h1>
 
 <motion.button 
@@ -43,6 +43,10 @@ export default function Home() {
   Ver Promoções
 </motion.button>
 </motion.section>
+
+  <section>
+    
+  </section>
      
     </div>
   );
