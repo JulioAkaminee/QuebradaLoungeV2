@@ -49,7 +49,7 @@ export default function Home() {
 
    
   <section className='promotionProducts'>
-    <div>
+    <div className='containerCard'>
     <motion.h1  initial={{ opacity: 0, y: 20, }} 
   animate={{ opacity: 1, y: 0 }}    
   transition={{
@@ -61,7 +61,7 @@ export default function Home() {
   animate={{ opacity: 1, y: 0 }}    
   transition={{
     duration: 1, 
-    delay: 1.5,  
+    delay: 1.8,  
     ease: [0.25, 0.8, 0.25, 1], 
   }}>
       <Link href={'/products'} className='btnShowAllProducts'>Ver Todos Produtos</Link>

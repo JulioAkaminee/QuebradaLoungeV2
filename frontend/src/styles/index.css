@@ -106,12 +106,27 @@ html {
     display: flex;
     justify-content: flex-end;
     margin: 10px 0;
+    width: 100%;
     
 }
 
-.containerMapa{
+.containerMapa{ 
    display: flex;
    justify-content: center;
+   align-items: center;
+   background: url('../../public/assets/overlay/quadrados.png');
+   background-size:cover;
+   height: 600px;
+  
+}
+
+.containerCard{
+    width: 90%;
+    display: flex
+;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 @media (max-width: 1024px) {
     .titleBannerJackDaniels {

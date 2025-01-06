@@ -1,7 +1,7 @@
 
 .produtosContainer{
     display: flex;
-    gap: 25px;
+    gap: 55px;
 }
 .cardProdutoContainer{
     background-color: white;

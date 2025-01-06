@@ -7,8 +7,10 @@ export default function Location(){
                  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
                 <div className="containerMapDetails">
-                    <h1>Venha nos conhecer</h1>
-                    <p>Clique no mapa e trace seu destino</p>
+                    <div>
+                        <h1>Venha nos conhecer</h1>
+                        <p>Clique no mapa e trace seu destino</p>
+                    </div>
                 </div>
            
         </>
