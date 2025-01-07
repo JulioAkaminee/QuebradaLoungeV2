@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Styles from '@/styles/componentes/cardProduto.module.css'
 
 export default function CardProdutos() {
     const produtos = [
@@ -34,27 +35,26 @@ export default function CardProdutos() {
         }
     ];
 
-    const produtoClicado = (produto) =>{
-        alert(`Você Clicou Em ${produto.name}
-com o valor de ${produto.value}`)
-    }
+    const produtoClicado = (produto) => {
+        alert(`Você Clicou Em ${produto.name} com o valor de ${produto.value}`);
+    };
 
     return (
-        <div className="produtosContainer">
+        <div className={Styles.produtosContainer}>
             {produtos.map((produto, index) => (
-                <div className="cardProdutoContainer" onClick={() => produtoClicado(produto)}  key={index}>
-                    <div className="containerImageProduct">
-                        <Image className="imageProduct" src={produto.image} width={84} height={154} alt={produto.name} />
+                <div className={Styles.cardProdutoContainer} onClick={() => produtoClicado(produto)} key={index}>
+                    <div className={Styles.containerImageProduct}>
+                        <Image className={Styles.imageProduct} src={produto.image} width={84} height={154} alt={produto.name} />
                     </div>
-                    <h1 className="valueProduct">
-                        <span className="cifraoProduct">R$ </span>{produto.value.toFixed(2)}
+                    <h1 className={Styles.valueProduct}>
+                        <span className={Styles.cifraoProduct}>R$ </span>{produto.value.toFixed(2)}
                     </h1>
-                    <h2 className="nameProduct">{produto.name}</h2>
-                    {produto.isAdult && <p className="adultAlert">Produto para maiores de 18 anos</p>}
+                    <h2 className={Styles.nameProduct}>{produto.name}</h2>
+                    {produto.isAdult && <p className={Styles.adultAlert}>Produto para maiores de 18 anos</p>}
                     
                     <div>
-                        <button className="btnAddToCart"  >Adicionar ao carrinho</button>
-                        <button className="btnBuy">Comprar</button>
+                        <button className={Styles.btnAddToCart}>Adicionar ao carrinho</button>
+                        <button className={Styles.btnBuy}>Comprar</button>
                     </div>
                 </div>
             ))}

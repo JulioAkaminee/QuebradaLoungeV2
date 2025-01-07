@@ -18,7 +18,7 @@ iframe{
     width: 90%;
     display: flex
 ;
-    align-items: start;
+    align-items: flex-start;
     height: 500px;
 }
 

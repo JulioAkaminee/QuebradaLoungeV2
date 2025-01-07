@@ -73,7 +73,7 @@ export default function Home() {
     delay: 1.8,  
     ease: [0.25, 0.8, 0.25, 1], 
   }}>
-        <CardProdutos/>
+        <CardProdutos className="productsIndex"/>
         </motion.div>
       </div>
  
