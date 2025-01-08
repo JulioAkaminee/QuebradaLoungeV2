@@ -1,0 +1,168 @@
+/* Contêiner principal do slider */
+.produtosContainer {
+    width: 90%;
+   
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contêiner do slider */
+.keen-slider {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-around;
+}
+
+/* Slide */
+.keen-slider__slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.keen-slider:not([data-keen-slider-disabled]) {
+ 
+    width: "";
+  }
+
+/* Card de produto */
+.cardProdutoContainer {
+    display: flex;
+    flex-direction: column;
+
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    cursor: pointer;
+    display: flex;
+  justify-content: space-between;
+
+}
+
+.cardProdutoContainer:hover {
+    transform: scale(1.05);
+}
+
+/* Imagem */
+.containerImageProduct {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.imageProduct {
+    max-width: 100%;
+    border-radius: 8px;
+    width: fit-content;
+}
+
+/* Preço */
+.valueProduct {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.cifraoProduct {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #71717A;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+/* Nome */
+.nameProduct {
+    font-size: 16px;
+    
+}
+
+/* Botões */
+.buttonContainer {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.btnAddToCartCarrossel {
+    border: 1px solid black;
+    color: black;
+    padding:15px;
+    border-radius: 4px;
+    cursor: pointer;
+    background: none;
+    transition: 200ms;
+}
+.btnAddToCartCarrossel:hover{
+    background-color: rgba(197, 197, 197, 0.203);
+}
+
+.btnBuyCarrossel {
+    background-color: #28a745;
+    color: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.btnBuyCarrossel:hover{
+    background-color: #269640;
+}
+
+/* Setas de navegação */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgb(0, 0, 0);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.arrowLeft {
+    left: -15px;
+}
+
+
+.arrowRight {
+    right:-15px;
+}
+
+/* Dots */
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: #b0afaf;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.activeDot {
+    background: #0e0e0e;
+    border: 1px solid white ;
+}

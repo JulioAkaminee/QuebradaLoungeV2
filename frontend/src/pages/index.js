@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import CardProdutos from '@/components/cardProdutos/cardProduto';
 import Location from '@/components/localização/location';
 import Link from 'next/link';
+import CardProdutosCarrossel from '@/components/cardProdutos/cardProdutosCarrossel';
 
 
 export default function Home() {
@@ -73,13 +74,19 @@ export default function Home() {
     delay: 1.8,  
     ease: [0.25, 0.8, 0.25, 1], 
   }}>
-        <CardProdutos className="productsIndex"/>
+        <CardProdutosCarrossel className="productsIndex"/>
         </motion.div>
       </div>
  
     
   </section>
-  <div className='containerMapa'><Location/></div>
+  <motion.div initial={{ opacity: 0, y: 20, }} 
+  animate={{ opacity: 1, y: 0 }}    
+  transition={{
+    duration: 1, 
+    delay: 1.8,  
+    ease: [0.25, 0.8, 0.25, 1], 
+  }} className='containerMapa'><Location/></motion.div>
      
     </div>
   );

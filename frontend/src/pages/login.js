@@ -1,9 +1,9 @@
 import Location from "@/components/localização/location"
-import CardProdutosCarrosel from '@/components/cardProdutos/cardProdutosCarrosel'
+import CardProdutosCarrossel from "@/components/cardProdutos/cardProdutosCarrossel"
 export default function Login(){
     return(
         <>
-        <CardProdutosCarrosel/>
+        <CardProdutosCarrossel/>
         </>
     )
 }
