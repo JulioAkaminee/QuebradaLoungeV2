@@ -41,9 +41,9 @@ export default function CardProdutosCarrossel() {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [sliderRef, instanceRef] = useKeenSlider({
         loop: true,
-        slides: { perView: 4, spacing: 15 },
+        slides: { perView: 4, spacing: 10 },
         breakpoints: {
-            "(max-width: 1024px)": {
+            "(max-width: 1050px)": {
                 slides: { perView: 3, spacing: 10 },
             },
             "(max-width: 768px)": {

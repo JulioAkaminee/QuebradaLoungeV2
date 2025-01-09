@@ -169,12 +169,18 @@ html {
 
     .titleBannerJackDaniels {
         font-size: 30px;
-        width: 440px;
+        width: 410px;
+    }
+    .titlePromotion{
+        font-size: 30px;
     }
 
     .btnVerPromoções {
         font-size: 18px;
         top: 47%;
+    }
+    .btnShowAllProducts{
+        font-size: 13px;
     }
 
 }
@@ -186,13 +192,18 @@ html {
 
     .titleBannerJackDaniels {
         font-size: 26px;
-        width: 370px;
+        width: 320px;
+    }
+
+    .titlePromotion{
+        font-size: 26px;
     }
 
     .btnVerPromoções {
-        font-size: 18px;
+        font-size: 16px;
         top: 45%;
     }
+   
 }
 
 @media (max-width: 425px) {
@@ -201,12 +212,23 @@ html {
     }
 
     .titleBannerJackDaniels {
-        font-size: 30px;
-        width: 390px;
+        font-size: 26px;
+        width: 320px;
+    }
+
+    .titlePromotion{
+        font-size: 24px;
     }
 
     .btnVerPromoções {
-        font-size: 16px;
+        font-size: 14px;
         top: 48%;
+    }
+}
+
+@media (max-width:340px) {
+    .titleBannerJackDaniels{
+        width: 290px;
+        font-size: 24px
     }
 }
