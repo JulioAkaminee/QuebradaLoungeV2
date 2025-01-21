@@ -1,5 +1,6 @@
 import styles from '@/styles/componentes/footer.module.css'
 import Image from 'next/image'
+import Link from 'next/link'
 export default function Footer(){
    return(
     <>
@@ -18,10 +19,13 @@ export default function Footer(){
                 <h1>Horario de Atendimento</h1>
             <p>De Qua. a Dom. das 18:00h ás 23:30h</p>
             </div>
-            <div className={styles.containerLocalizacao}>
-                <h1>Localização</h1>
-            <p>Rua Homa,158 <br /> CEP 02984-000 - São Paulo - SP</p>
-            </div>
+            
+              <div className={styles.containerLocalizacao}>
+                  <h1>Localização</h1>
+              <a className={styles.location} href="https://maps.app.goo.gl/npLVGaFZhA7u6oZS8" target='_blank'>
+              <p>Rua Homa,158 <br /> CEP 02984-000 - São Paulo - SP</p>
+            </a>
+              </div>
         </div>
         
         <div className={styles.containerBaixeNossoApp}>

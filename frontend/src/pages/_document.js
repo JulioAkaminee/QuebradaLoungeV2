@@ -33,7 +33,7 @@ class MyDocument extends Document {
             }}
           />
         </Head>
-        <body style={{background:"#17171A"}}>
+        <body style={{background:"#17171A", overflow:'hidden'}}>
           <Main />
           <NextScript />
         </body>

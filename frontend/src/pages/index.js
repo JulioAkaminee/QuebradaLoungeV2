@@ -6,6 +6,7 @@ import CardProdutos from '@/components/cardProdutos/cardProduto';
 import Location from '@/components/localização/location';
 import Link from 'next/link';
 import CardProdutosCarrossel from '@/components/cardProdutos/cardProdutosCarrossel';
+import Footer from '@/components/footer/footer';
 
 
 export default function Home() {
@@ -88,6 +89,7 @@ export default function Home() {
     ease: [0.25, 0.8, 0.25, 1], 
   }} className='containerMapa'><Location/></motion.div>
      
+     <Footer/>
     </div>
   );
 }

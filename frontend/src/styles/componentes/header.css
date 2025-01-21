@@ -134,6 +134,7 @@ header{
     outline: none;
     transition: 700ms;
 }
+
 .menuBurguer{
     display: none;
     cursor: pointer;

@@ -1,10 +1,10 @@
 .footer{
     background-color: #F2E63D;
     width: 100%;
-    height: 250px;
+    
     display: flex;
     gap:  55px;
-    padding: 50px 0;
+    padding: 50px ;
     justify-content: center;
    
 }
@@ -17,6 +17,21 @@
 .containerNavegacao ul li{
     list-style-type: none;
     cursor: pointer;
+    transition: 300ms;
+    font-size: 18px;
+    
+}
+.containerNavegacao ul li:hover{
+    font-weight: 700;
+}
+.containerHorarioAtendimento p, .containerLocalizacao p{
+    margin-top: 10px;
+}
+.containerNavegacao ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 15px;
 }
 
 .containerBaixeNossoApp{
@@ -24,11 +39,45 @@ display: flex;
 flex-direction: column;
 gap: 5px;
 
+
+}
+.location {
+    text-decoration: underline;
+    transition: 300ms;
+}
+.location:hover{
+    font-weight: 700;
 }
 
 .imageDisponivelEm{
     object-fit: contain;
     width: 100%;
     height: 50px;
-   
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.imageDisponivelEm:hover{
+ scale: 1.020;
+}
+@media screen and (max-width: 1080px){
+    .containerBaixeNossoApp div{
+        display: flex;
+        flex-direction: column;
+        width: inherit;
+    }
+    .imageDisponivelEm{
+        width: fit-content;
+    }
+}
+@media screen and (max-width: 768px) {
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .containerNavegacao, .containerFooterInformation, .containerLocalizacao,.containerBaixeNossoApp{
+        width: 380px;
+    }
 }

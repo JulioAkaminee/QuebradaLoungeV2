@@ -16,7 +16,10 @@
     flex-direction: column;
     justify-content: space-between;
 }
-
+.h1Footer{
+    font-size: 16px;
+    
+}
 
 .containerImageProduct{
     background: #EBEBEB;
